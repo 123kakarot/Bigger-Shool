@@ -8,6 +8,24 @@
         @foreach(var course in Model)
         {
             <li>
+                <div class="date">
+                    <div class="month">
+                        @course.Datetime.ToString("MM")
+                    </div>
+                    <div class="month">
+                        @course.Datetime.ToString("dd")
+                    </div>
+                </div>
+                <div class="details">
+                    <span class="lecturer">
+                        @course.Lecturer.Name
+                    </span>
+                    <span class="month">
+                        @course.Category.Name
+                    </span>
+                </div>
+            </li>
+            <li>
                 @course.Datetime =@course.Lecturer.Name
             </li>
         }
