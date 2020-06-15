@@ -18,7 +18,7 @@ namespace BTTuan4.ViewModels
                 CultureInfo.CurrentCulture,
                 DateTimeStyles.None,
                 out datetime);
-            return (isValid && datetime > DateTime.Now);
+            return isValid;
         }
     }
 }
